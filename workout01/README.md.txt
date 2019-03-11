@@ -1,0 +1,1 @@
+The goal of Workout 01 is to 1) start working with a more complex file structure, and uploading files to GitHub, 2) to visualize shot data of NBA players with summaries, and 3) to produce a report document with a narrative.
