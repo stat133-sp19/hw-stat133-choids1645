@@ -7,8 +7,24 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r echo=FALSE}
+library(dplyr)
+library(ggplot2)
+```
 
-```{r}
+```{r echo=FALSE}
+shots_data <- read.csv(file = "../data/shots-data.csv", stringsAsFactors = FALSE)
 
+#2PT Effective Shooting % by Player
+grouped2 <- group_by(filter(shots_data, shots_data$shot_type == "2PT Field Goal"), name)
+out_table2 <- summarise(grouped2, total = n(), made = sum(shot_made_flag == "shot_yes"), perc_made = (made/total)) %>% arrange(desc(perc_made))
+
+#3PT Effective Shooting % by Player
+grouped3 <- group_by(filter(shots_data, shots_data$shot_type == "3PT Field Goal"), name)
+out_table3 <- summarise(grouped3, total = n(), made = sum(shot_made_flag == "shot_yes"), perc_made = (made/total)) %>% arrange(desc(perc_made))
+
+#Effective Shooting % by Player 
+grouped <- group_by(shots_data, name)
+out_table <- summarise(grouped, total = n(), made = sum(shot_made_flag == "shot_yes"), perc_made = (made/total)) %>% arrange(desc(perc_made))
 ```
 
