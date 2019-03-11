@@ -1,5 +1,6 @@
 ---
 title: "workout01-david-choi"
+author: "David Choi"
 output: github_document
 ---
 

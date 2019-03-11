@@ -81,7 +81,7 @@ sink()
 
 #concatenate all data into one
 shots_data <- rbind(iguodala, green, durant, thompson, curry)
-write.csv(x = shots_data, file = "data/shots-data.csv")
+write.csv(x = shots_data, file = "data/shots-data.csv", row.names = FALSE)
 sink(file = 'output/shots-data-summary.txt')
 summary(shots_data)
 sink()
