@@ -1,6 +1,7 @@
 ###This file contains a data dictionary.
-___    
+
 |Variable Name  |Description  |
+--- | --- |
 |**team_name**  |team name  | 
 |**game_date**  |Date when the shot occurred  |
 |**season** |Season  |
@@ -14,4 +15,3 @@ ___
 |**opponent** |opponent team name  |
 |**x**  |x coordinate of the court where a shot occurred(in inches) |
 |**y**  |y coordinate of the court where a shot occurred(in inches) |
-___
