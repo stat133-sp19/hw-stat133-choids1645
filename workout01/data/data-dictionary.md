@@ -1,7 +1,7 @@
 ###This file contains a data dictionary.
 ___    
 |Variable Name|Description|
-|**team_name**|team name|
+|**team_name**|team name| 
 |**game_date**|Date when the shot occurred|
 |**season**|Season|
 |**period**|period when the shot was occurred|
