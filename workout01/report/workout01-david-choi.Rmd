@@ -28,3 +28,9 @@ grouped <- group_by(shots_data, name)
 out_table <- summarise(grouped, total = n(), made = sum(shot_made_flag == "shot_yes"), perc_made = (made/total)) %>% arrange(desc(perc_made))
 ```
 
+#Report on the shot data of five players from the Golden State Warriors
+###Stat 133
+###David Choi
+
+##Introduction
+When a basketball player makes a shot, the score will be determined based on the distance from the basket to the player. Depending on the player, some players will be more likely to successfully throw the ball into the basket when they throw from close distance, and others will relatively do better from far distance
