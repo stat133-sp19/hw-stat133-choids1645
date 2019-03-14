@@ -1,4 +1,4 @@
-##################################################
+###################################################################################################
 ## Title        : Shots Data (Part 3)
 ## Description  : Create a csv file shots-data.csv that contains data of shots made by five players
 ## Input        :
@@ -10,7 +10,7 @@
 ## Output       : shots-data.csv and other summaries of data in txt format
 ## Date         : 3/10/2019
 ## Author       : David Choi
-##################################################
+####################################################################################################
 
 #read in five data
 

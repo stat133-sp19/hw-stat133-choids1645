@@ -1,11 +1,11 @@
-##################################################
+###########################################################################################################
 ## Title        : Shots Data 1
 ## Description  : Create graphs that visualize data sets in shots-data.csv
 ## Input        : shots-data.csv and other csv files
 ## Output       : scatterplots of the coordinates of the location where the shots occurred for each player
 ## Date         : 3/10/2019
 ## Author       : David Choi
-##################################################
+###########################################################################################################
 library(dplyr)
 library(ggplot2)
 library(jpeg)
