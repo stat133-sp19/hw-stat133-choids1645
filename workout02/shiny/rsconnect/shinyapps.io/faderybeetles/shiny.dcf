@@ -1,0 +1,10 @@
+name: shiny
+title:
+username:
+account: faderybeetles
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 861889
+bundleId: 2007587
+url: https://faderybeetles.shinyapps.io/shiny/
+when: 1555125634.28867
