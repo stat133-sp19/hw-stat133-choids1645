@@ -1,0 +1,88 @@
+---
+title: "Introduction to Package Binomial"
+author: "David Choi"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Package Binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Binomial
+
+The package '"binomial"' is a implementation for calculating probabilities, creating a data frames, and visualizing the probabilities as the number of successes increase.
+
+## bin_Choose(n, k)
+This calculates "n choose k".
+```{r}
+c <- bin_choose(10, 5)
+c
+```
+
+## bin_probability(success, trials, prob)
+This function calculates the probabilities of getting given number of successes out of given trials where probability of one success is given as well.
+```{r}
+p <- bin_probability(2, 5, 0.5)
+p
+```
+
+##bin_distribution(trials, prob)
+This creates a data frame of the number of successes(0 to trials) and corresponding probabilities. The returned data frame is a '"bindis"' object. Using plot() we can draw a plot from the bindis object
+```{r}
+bd <- bin_distribution(5, 0.5)
+bd
+plot(bd)
+```
+
+##bin_cumulative(trials, prob)
+This creates a data frame of the number of successes(0 to trials), corresponding probabilities, and cumulative probabilities. The returned data frame is a '"bincum"' object. Using plot() we can draw a plot from the bincum object
+```{r}
+bc <- bin_cumulative(5, 0.5)
+bc
+plot(bc)
+```
+
+##bin_variable(trials, prob)
+This creates a "'binvar'" object with number of trials and probability of getting a success. Using summary() method, we can print out summary of binomial variable object
+```{r}
+bv <- bin_variable(5, 0.5)
+bv
+summary(bv)
+```
+
+##bin_mean(trials, prob)
+This returns the expected value
+```{r}
+bin_mean(5, 0.5)
+```
+
+##bin_variance(trials, prob)
+This returns the variance
+```{r}
+bin_variance(5, 0.5)
+```
+
+##bin_mode(trials, prob)
+This returns the mode
+```{r}
+bin_mode(5, 0.5)
+```
+
+##bin_skewness(trials, prob)
+This returns the skewness
+```{r}
+bin_skewness(5, 0.5)
+```
+
+##bin_kurtosis(trials, prob)
+This returns the kurtosis
+```{r}
+bin_kurtosis(5, 0.5)
+```
+

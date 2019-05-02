@@ -1,0 +1,1 @@
+The purpose of this project is to create an R package  that implements functions for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance, etc.

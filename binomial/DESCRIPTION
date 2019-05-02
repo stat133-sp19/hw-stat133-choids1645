@@ -1,0 +1,14 @@
+Package: binomial
+Type: Package
+Title: Calculating probabilities and other functionalities of a Binomial random variable
+Version: 0.1.0
+Author: David Choi
+Maintainer: David Choi <choids1645@berkeley.edu>
+Description: Functions to create binomial-distribution-related objects(binvar, bindis, bincum),
+    to calculate probabilities, to create a data frame with number of successes and corresponding probabilities,
+    and to summarize and visualize probabilities.
+License: GNL-2
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
