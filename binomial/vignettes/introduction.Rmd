@@ -32,7 +32,7 @@ p <- bin_probability(2, 5, 0.5)
 p
 ```
 
-##bin_distribution(trials, prob)
+## bin_distribution(trials, prob)
 This creates a data frame of the number of successes(0 to trials) and corresponding probabilities. The returned data frame is a '"bindis"' object. Using plot() we can draw a plot from the bindis object
 ```{r}
 bd <- bin_distribution(5, 0.5)
@@ -40,7 +40,8 @@ bd
 plot(bd)
 ```
 
-##bin_cumulative(trials, prob)
+
+## bin_cumulative(trials, prob)
 This creates a data frame of the number of successes(0 to trials), corresponding probabilities, and cumulative probabilities. The returned data frame is a '"bincum"' object. Using plot() we can draw a plot from the bincum object
 ```{r}
 bc <- bin_cumulative(5, 0.5)
@@ -48,7 +49,8 @@ bc
 plot(bc)
 ```
 
-##bin_variable(trials, prob)
+
+## bin_variable(trials, prob)
 This creates a "'binvar'" object with number of trials and probability of getting a success. Using summary() method, we can print out summary of binomial variable object
 ```{r}
 bv <- bin_variable(5, 0.5)
@@ -56,31 +58,32 @@ bv
 summary(bv)
 ```
 
-##bin_mean(trials, prob)
+
+## bin_mean(trials, prob)
 This returns the expected value
 ```{r}
 bin_mean(5, 0.5)
 ```
 
-##bin_variance(trials, prob)
+## bin_variance(trials, prob)
 This returns the variance
 ```{r}
 bin_variance(5, 0.5)
 ```
 
-##bin_mode(trials, prob)
+## bin_mode(trials, prob)
 This returns the mode
 ```{r}
 bin_mode(5, 0.5)
 ```
 
-##bin_skewness(trials, prob)
+## bin_skewness(trials, prob)
 This returns the skewness
 ```{r}
 bin_skewness(5, 0.5)
 ```
 
-##bin_kurtosis(trials, prob)
+## bin_kurtosis(trials, prob)
 This returns the kurtosis
 ```{r}
 bin_kurtosis(5, 0.5)
